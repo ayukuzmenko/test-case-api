@@ -16,12 +16,12 @@ module.exports = [
         id: 1,
         firstName: "Василий",
         lastName: "Пупкин",
-        email: "pupkin@mail.com",
+        email: "test@mail.com",
         avatarUrl: "https://free-images.com/sm/89e6/man_work_desk_business.jpg",
         role: {
             id: 1,
             name: "Аналитик",
         },
-        password: "Vasya",
+        password: "test",
     },
 ];

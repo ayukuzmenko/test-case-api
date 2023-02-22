@@ -33,7 +33,7 @@ router.get("/", async ctx => {
 
     const sorting = { sortingField, sortingDirection };
 
-    const pagination = { pageSize, pageNumber };
+    const pagination = { pageSize: Number(pageSize), pageNumber: Number(pageNumber) };
 
     try {
         const data = await list(omitBy(query, isNil), sorting, pagination);

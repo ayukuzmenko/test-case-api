@@ -15,7 +15,7 @@ async function find(query) {
 }
 
 async function list(query, sorting, pagination) {
-    let filteringMessages = messages.map(message => omit(message, ["link"]));
+    let filteringMessages = messages.map(message => omit(message, ["imageUrl"]));
 
     if (!isEmpty(query)) {
         filteringMessages = filteringMessages.filter(message => {
